@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+html,body{
+   min-height: 100%;
+   min-width: 100%;
+   font-family: cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-body{
+    background-image: url(./Assets/nick-hillier-yD5rv8_WzxA-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-body div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: rgba(0,0,0,0.7);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.top-div{
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
-
-.App-link {
-  color: #61dafb;
+.top-div section{
+   line-height: 32px;
+   padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-div{
+ justify-content: center;
+ min-width: fit-content;
+ grid-template-rows: 1fr 4fr;
+}
+button{
+    height: 40px;
+    margin: 0 10px;
+    background-color: yellow;
+    color: black;
+    font-size: larger;
+    outline: none;
+    border: 0px solid yellow;
+}
+.top-div{
+    color: whitesmoke;
+}
+input{
+    height: 35px;
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid yellow;
+    color: #f7f1f1;
+    font-weight: bold;
+    font-size: medium;
+    outline:none;
+}
+.input{
+    margin: 0 auto;
 }
